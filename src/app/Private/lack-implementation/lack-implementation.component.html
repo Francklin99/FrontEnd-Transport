@@ -1,0 +1,33 @@
+<div class="module-container">
+  <div class="module-overlay" id="overlay">
+      <div class="module-message p-4">
+          <h2 class="mb-4"><i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>Módulos en Desarrollo</h2>
+          <p class="mb-4">Estimado usuario, los módulos que estás intentando acceder aún están en desarrollo. Estamos trabajando arduamente para implementar nuevas funcionalidades y mejorar tu experiencia.</p>
+          <p class="mb-4">Por favor, ten paciencia mientras completamos el desarrollo. Si tienes alguna pregunta o sugerencia, no dudes en contactar a nuestro equipo de soporte.</p>
+          <button class="btn btn-primary p-2" onclick="history.back()">Entendido</button>
+      </div>
+  </div>
+
+<button class="btn btn-dark preview-toggle" onclick="togglePreview()">
+  <i class="bi bi-eye"></i> Vista Previa
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleOverlay() {
+      const overlay = document.getElementById('overlay');
+      overlay.style.display = overlay.style.display === 'none' ? 'flex' : 'none';
+  }
+
+  function togglePreview() {
+      const overlay = document.getElementById('overlay');
+      const previewButton = document.querySelector('.preview-toggle');
+      if (overlay.style.display === 'none') {
+          overlay.style.display = 'flex';
+          previewButton.innerHTML = '<i class="bi bi-eye-slash"></i> Ocultar Vista Previa';
+      } else {
+          overlay.style.display = 'none';
+          previewButton.innerHTML = '<i class="bi bi-eye"></i> Vista Previa';
+      }
+  }
+</script>

@@ -1,0 +1,55 @@
+<div class="fondo-rgba">
+  <div class="container-fluid">
+    <!-- Header Section -->
+    <div class="profile-header text-center p-2">
+        <img [src]="driverData.image" alt="Foto del Conductor" class="driver-photo mb-3">
+        <h2 class="fw-bold text-white">{{driverData.name}}</h2>
+        <p class="text-muted text-white">Conductor de confianza</p>
+    </div>
+
+    <!-- Profile Details -->
+    <div class="profile-details mt-4">
+        <div class="row gap-3">
+            <div class="col">
+                <div class="route-list p-4">
+                    <h5 class="fw-bold">Detalles de la Ruta</h5>
+                    <p><strong>Origen:</strong> {{driverData.origin}}</p>
+                    <p><strong>Destino:</strong> {{driverData.destination}}</p>
+                    <h6 class="fw-bold mt-3">Rutas Intermedias:</h6>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-2">
+                            AUCAYACU
+                            <span class="text-dark"><strong>S/20.00 &nbsp; </strong>
+                              <button type="button" class="btn btn-primary p-2" routerLink="/workspace/PaymentMethods" >Reservar Viaje</button>
+                            </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-2">
+                            NUEVO PROGRESO
+                            <span class="text-dark"><strong>S/30.00 &nbsp;</strong>
+                              <button type="button" class="btn btn-primary p-2" routerLink="/workspace/PaymentMethods">Reservar Viaje</button>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="route-list vehicle-details p-4">
+                    <h5 class="fw-bold">Detalles del Vehículo</h5>
+                    <p><strong>Placa:</strong> ABC-123</p>
+                    <p><strong>Modelo:</strong> Toyota Corolla</p>
+                    <p><strong>Color:</strong> Azul</p>
+                    <p><strong>Año:</strong> 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-4 d-flex gap-3">
+        <button class="btn btn-outline-secondary btn-lg p-2">Contactar al Conductor</button>
+    </div>
+
+  </div>
+
+</div>
+

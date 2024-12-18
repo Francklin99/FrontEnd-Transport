@@ -1,0 +1,21 @@
+<header class="header" [ngStyle]="{'background-color': headerBackgroundColor}">
+  <div class="header__logo">
+    <img class="header__logo-image" src="/img/minilogo.png" alt="Logo de TravelGo">
+    <span class="header__logo-title">TravelGo</span>
+  </div>
+  <div class="header__profile">
+    <span class="header__profile-name">Jasmin Lucero Jaramillo Céspedes</span>
+    <img class="header__profile-image rounded-circle" src="/avatar/perfil-jasmin.jpg" alt="Foto de perfil"
+      (click)="toggleUserMenu($event)">
+  </div>
+  <div *ngIf="userMenu" class="toggleUserMenu" id="userMenu">
+    <div class="profile-menu">
+      <ul>
+        <li><a href="#" id="closeSession"><i class="bi bi-box-arrow-right"></i> Cerrar sesión</a></li>
+        <li><a id="accountSettings"><i class="bi bi-gear"></i> Configuración de cuenta</a></li>
+        <li><a id="privacySettings"><i class="bi bi-shield-lock"></i> Configuración de privacidad</a></li>
+        <li><a  id="help"><i class="bi bi-question-circle"></i> Ayuda</a></li>
+      </ul>
+    </div>
+  </div>
+</header>

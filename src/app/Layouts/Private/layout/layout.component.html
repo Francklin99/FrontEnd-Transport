@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="Header">
+    <app-header [headerBackgroundColor]="headerBackgroundColor"></app-header>
+  </div>
+  <div class="SidebarAndContent">
+    <div class="Sidebar">
+      <app-sidebar (sendColor)="recieveColor($event)"></app-sidebar>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

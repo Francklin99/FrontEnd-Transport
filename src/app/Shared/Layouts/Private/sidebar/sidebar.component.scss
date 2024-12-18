@@ -1,0 +1,82 @@
+/* Estilos para el Sidebar */
+.sidebar {
+  width: 250px;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Para que los elementos se distribuyan correctamente */
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Asegura que el contenido ocupe el espacio disponible */
+}
+
+.sidebar__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar__item {
+  margin-bottom: 20px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  padding: 10px 20px !important;
+  margin: 10px !important;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar__link:hover {
+  background-color: #34495e;
+}
+
+.sidebar__link-theme {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  padding: 10px 20px !important;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+/* Iconos */
+.sidebar__icon {
+  font-size: 20px;
+  margin-right: 10px !important; /* Espaciado mejorado */
+}
+
+.sidebar__text {
+  font-weight: 500;
+}
+
+/* Para la lista de iconos de tema que está al final del sidebar */
+.sidebar__list.mt-auto {
+  margin-top: auto; /* Esto empuja los iconos al fondo del sidebar */
+  padding: 10px 0;
+}
+
+.sidebar__item.d-flex {
+  justify-content: center;
+}
+
+.sidebar__link-theme {
+  margin: 0 10px; /* Asegura que los iconos tengan espacio entre ellos */
+}
+
+/* Estilos para un estado activo */
+.sidebar__link.active {
+  background-color: #1abc9c;
+}
+

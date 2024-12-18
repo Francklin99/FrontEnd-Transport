@@ -1,0 +1,34 @@
+<div class="container-fluid d-flex justify-content-center align-items-center h-100 w-100 p-4 fondo-rgba">
+  <div class="card shadow-lg p-4" style="width: 400px; border-radius: 20px; border: none;">
+    <div class="card-body text-center">
+      <h2 class="card-title mb-3" style="font-family: 'Arial', sans-serif; color: #333;">Perfil</h2>
+      <p class="card-subtitle mb-4 text-muted" style="font-size: 1.1rem;">Cambia tu foto de perfil y edita tu información personal</p>
+
+      <div class="profile-picture mb-4 d-flex flex-column align-items-center">
+        <img src="/avatar/perfil-jasmin.jpg" class="border mb-3 shadow-sm" alt="Foto de Perfil" width="auto" height="150">
+        <button class="btn btn-outline-primary btn-sm" onclick="document.getElementById('fileInput').click()" style="font-size: 0.9rem; padding: 5px 15px;">Cambiar Foto</button>
+        <input id="fileInput" type="file" style="display: none;" accept="image/*">
+      </div>
+
+      <form>
+        <div class="mb-3">
+          <label for="nombres" class="form-label">Nombres</label>
+          <input type="text" class="form-control form-control-lg rounded-3 shadow-sm p-2" id="nombres" placeholder="Ingresa tus nombres" value="Jasmin Lucero">
+        </div>
+        <div class="mb-3">
+          <label for="apellidos" class="form-label">Apellidos</label>
+          <input type="text" class="form-control form-control-lg rounded-3 shadow-sm p-2" id="apellidos" placeholder="Ingresa tus apellidos" value="Jaramillo Céspedes">
+        </div>
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control form-control-lg rounded-3 shadow-sm p-2" id="telefono" placeholder="Ingresa tu número de teléfono" value="916130538">
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" class="form-control form-control-lg rounded-3 shadow-sm p-2" id="correo" placeholder="Ingresa tu correo electrónico" value="jasminjaramillo84@gmail.com">
+        </div>
+        <button type="submit" class="btn btn-primary w-100 rounded-3 py-2" style="font-size: 1.1rem;">Guardar Cambios</button>
+      </form>
+    </div>
+  </div>
+</div>

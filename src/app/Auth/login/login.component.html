@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="contanier-right">
+    <img [src]="'/img/login_img.jpg'" loading="lazy" alt="logo">
+  </div>
+  <div class="contanier-left">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <div class="d-flex w-100 justify-content-center mb-4 align-items-center gap-4">
+                <h3 class="m-0 p-0">Iniciando Sesión</h3>
+                <button class="btn btn-danger btn-circle" routerLink="/LackImplementation"><i class="bi bi-google"></i></button>
+                <button class="btn btn-primary btn-circle" routerLink="/LackImplementation"><i class="bi bi-facebook"></i></button>
+              </div>
+
+                <div class="row d-flex gap-2">
+                  <div class="col mb-4">
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="text" id="firstName" class="form-control form-control-lg px-2" [(ngModel)]="email" />
+                      <label class="form-label" for="firstName">Email</label>
+                    </div>
+
+                  </div>
+                <div class="row d-flex gap-2">
+                  <div class="col mb-4 d-flex align-items-center">
+
+                    <div data-mdb-input-init class="form-outline datepicker w-100">
+                      <input type="password" class="form-control form-control-lg px-2" id="birthdayDate" [(ngModel)]="password" />
+                      <label for="birthdayDate" class="form-label">Contraseña</label>
+                    </div>
+
+                  </div>
+                </div>
+                <div *ngIf="mensajeError!==''" class="alert alert-danger" role="alert">
+                  Contraseña o email incorrectos
+                </div>
+                <div class="mt-4 pt-2 w-100 d-flex justify-content-between">
+                  <button type="submit" class="btn btn-warning btn-lg p-2" routerLink="/LayoutMain/PageMain">Cancelar</button>
+                  <button type="submit" class="btn btn-success btn-lg p-2" (click)="verificarLogin()">Ingresar</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

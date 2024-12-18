@@ -1,0 +1,54 @@
+<aside class="sidebar" [ngStyle]="{'background-color': sidebarBackgroundColor}">
+  <nav class="sidebar__nav">
+    <ul class="sidebar__list">
+      <li class="sidebar__item">
+        <a class="sidebar__link" routerLink="/workspace/Profile">
+          <i class="bi bi-person-circle sidebar__icon"></i>
+          <span class="sidebar__text">Mi perfil</span>
+        </a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" routerLink="/workspace/OrderTaxi">
+          <i class="bi bi-car-front sidebar__icon"></i>
+          <span class="sidebar__text">Pedir Taxi</span>
+        </a>
+      </li>
+      <li class="sidebar__item">
+        <a href="#" class="sidebar__link" routerLink="/workspace/TravelScheduled">
+          <i class="bi bi-calendar-event sidebar__icon"></i>
+          <span class="sidebar__text">Viajes Programados</span>
+        </a>
+      </li>
+      <li class="sidebar__item">
+        <a href="#" class="sidebar__link" routerLink="/workspace/HistoryTravels">
+          <i class="bi bi-clock sidebar__icon"></i>
+          <span class="sidebar__text">Historial de Viajes</span>
+        </a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" routerLink="/workspace/FollowUp">
+          <i class="bi bi-geo-alt sidebar__icon"></i>
+          <span class="sidebar__text">Seguimiento</span>
+        </a>
+      </li>
+      <li class="sidebar__item">
+        <a  class="sidebar__link" routerLink="/workspace/Favorites">
+          <i class="bi bi-heart sidebar__icon"></i>
+          <span class="sidebar__text">Favoritos</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Lista de iconos de tema al final del sidebar -->
+    <ul class="sidebar__list mt-auto">
+      <li class="sidebar__item d-flex justify-content-center bg-primary">
+        <a class="sidebar__link-theme rounded text-center" (click)="darkBackgroundColor()">
+          <i class="bi bi-moon sidebar__icon"></i>
+        </a>
+        <a class="sidebar__link-theme rounded text-center" (click)="lightBackgroundColor()">
+          <i class="bi bi-brightness-high sidebar__icon"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>

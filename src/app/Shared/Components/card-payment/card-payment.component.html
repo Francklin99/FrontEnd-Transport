@@ -1,0 +1,45 @@
+<div class="fondo-rgba">
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body p-4">
+                    <h2 class="card-title text-center mb-4">Pago con Tarjeta de Crédito</h2>
+                    <div class="credit-card-icons text-center">
+                      <img class="img-icon" src="/img/visa.png" alt="">
+                      <img class="img-icon" src="/img/mastercard.webp" alt="">
+                      <img class="img-icon" src="/img/compras.png" alt="">
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Número de Tarjeta</label>
+                            <input type="text" class="form-control p-2" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="row mb-3 gap-3">
+                            <div class="col">
+                                <label for="expiryDate" class="form-label">Fecha de Vencimiento</label>
+                                <input type="text" class="form-control p-2" id="expiryDate" placeholder="MM/AA" required>
+                            </div>
+                            <div class="col">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control p-2" id="cvv" placeholder="123" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardName" class="form-label">Nombre en la Tarjeta</label>
+                            <input type="text" class="form-control p-2" id="cardName" placeholder="Juan Pérez" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg" routerLink="/workspace/HistoryTravels">Pagar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+

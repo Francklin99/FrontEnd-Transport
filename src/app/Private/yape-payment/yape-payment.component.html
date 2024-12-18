@@ -1,0 +1,48 @@
+<div class="container-fluid d-flex justify-content-center fondo-rgba">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header yape-bg text-white py-3">
+                    <h2 class="text-center mb-0">
+                        <i class="bi bi-phone me-2"></i>Pago con Yape
+                    </h2>
+                </div>
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        <img src="/img/yape.avif" alt="Yape Logo" class="img-fluid mb-3" style="max-width: 150px;">
+                        <h3 class="yape-text">Monto a pagar: S/. 20.00</h3>
+                    </div>
+                    <form>
+                        <div class="mb-4">
+                            <label for="phoneNumber" class="form-label">Número de teléfono</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                                <input type="tel" class="form-control p-2" id="phoneNumber" placeholder="Ingresa tu número de Yape" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="approvalCode" class="form-label">Código de aprobación (6 dígitos)</label>
+                            <input type="text" class="form-control approval-input text-center" id="approvalCode" maxlength="6" placeholder="------" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary yape-bg w-100 py-2" routerLink="/workspace/HistoryTravels">
+                            <i class="bi bi-check-circle me-2"></i>Confirmar Pago
+                        </button>
+                    </form>
+                </div>
+                <div class="card-footer bg-light text-center py-3">
+                    <small class="text-muted">Asegúrate de tener saldo suficiente en tu cuenta Yape</small>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  document.getElementById('approvalCode').addEventListener('input', function (e) {
+      this.value = this.value.replace(/[^0-9]/g, '');
+  });
+</script>

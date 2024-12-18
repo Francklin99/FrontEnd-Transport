@@ -1,0 +1,51 @@
+.profile-header {
+  background-color: #f8f9fa;
+  background-image: url('/img/portada2.jpg');
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border:2px solid white;
+}
+
+.driver-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.route-list {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.route-list h5 {
+  margin-bottom: 15px;
+}
+
+.route-list .route-item {
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.route-list .route-item:last-child {
+  border-bottom: none;
+}
+
+.vehicle-details {
+  margin-top: 30px;
+}
+.fondo-rgba{
+  background: rgba(0, 0, 0, 0.7); /* Cambia los valores de RGBA según necesites */
+  height: 100%;
+  width: 100%;
+  padding: 100px !important;
+}

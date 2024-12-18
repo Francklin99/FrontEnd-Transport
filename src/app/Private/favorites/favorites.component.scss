@@ -1,0 +1,40 @@
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.driver-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.star-rating {
+  color: #ffc107;
+}
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #dc3545;
+}
+.fondo-rgba{
+  background: rgba(0, 0, 0, 0.6); /* Cambia los valores de RGBA según necesites */
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+.container-fluid{
+  width: 100vw !important;
+  height: 100vh !important;
+  display: flex;
+  background-color: rgba(255, 236, 209, 1);
+}
+
+.contanier-left{
+  width: 50% !important;
+  height: 100% !important;
+}
+
+.contanier-right{
+  width: 50% !important;
+  height: 100% !important;
+}
+.contanier-right img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.btn-circle {
+  width: 50px;        /* Ancho del botón */
+  height: 50px;       /* Altura del botón */
+  padding: 0;         /* Sin relleno adicional */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  display: flex;      /* Para centrar el icono */
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-circle i {
+  font-size: 1.5rem;  /* Tamaño del icono */
+}

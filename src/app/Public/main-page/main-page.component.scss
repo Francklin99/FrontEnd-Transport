@@ -1,0 +1,56 @@
+.custom-background {
+  position: relative;
+  background-image: url('/img/Fondo-main.jpg'); /* Cambia la ruta a tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 90vh; /* Altura del div, puedes ajustarla */
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Aquí aplicas el efecto RGBA */
+  color: white; /* Color de texto blanco sobre el fondo oscuro */
+  text-align: center;
+}
+
+.logo img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.logo-descripcion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px !important;
+}
+.logo-descripcion h3{
+  font-size: 80px;
+  font-weight: bold;
+  width: 50%;
+}
+.logo-options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.logo-options button{
+height: 40px !important;
+display: flex !important;
+justify-content: center;
+align-items: center;
+margin: 0 !important;
+padding: 20px !important;
+font-size: 36px !important;
+background-color: #001524 !important;
+}
+.logo-options button:hover{
+  background-color: #FFC107 !important;
+  color: black;
+}
